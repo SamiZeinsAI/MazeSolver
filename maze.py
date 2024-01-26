@@ -34,7 +34,7 @@ class Maze():
     def _solve_r(self,i,j):
         self._animate()
         self._cells[i][j].visited = True
-        if i == self.__num_rows - 1 and j == self.__num_cols:
+        if i == self.__num_rows - 1 and j == self.__num_cols - 1:
             return True
         dirs = [
             (i+1,j,self._cells[i][j].has_bottom_wall),
